@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <head>
     <meta charset="utf-8"/>
+    <link href="css/style.css" rel="stylesheet"/>
     <title>Jerry's website</title>
 </head>
 <body>
-    <h1>Jeritiana Ravelojaona</h1>
+    <div class="top-element">
+        <h1>Jeritiana Ravelojaona</h1>
+        <p>Toulouse, France</p>
+        <p>jeritiana.ravelojaona@gmail.com</p>
+        <ul>
+            <li>C++</li>
+            <li>C</li>
+            <li>Java</li>
+            <li>Python</li>
+            <li>Bash</li>
+        </ul>
+    </div>
 
-    <p>Toulouse, France</p>
-    <p>jeritiana dot ravelojaona at gmail dot com</p>
+    <div class="caption">
+        <ul>
+            <li>Title to add: GCP/GKE, appctl, etc.</li>
+        </ul>
+    </div>
 
-    <h2>Work Experience</h2>
+    <div class="content">
+        <h2>Work Experience</h2>
 
-    <h3>Software Engineer, Spherea, Toulouse, France</h3>
-    <p>2015-Present</p>
-    <ul>
-        <li>Acted as developer, maintainer and trainer on Spherea’s main software product,
-        500k lines of code, within a team of 10 persons (C++, Java, Python)</li>
-        <li>Led software industrialization, initiated and designed the Continuous Integration pipeline,
-        resulting in 95% reduction in bug detection time (GitLab CI, Docker, Bash)</li>
-        <li>Realized the backend architecture of the winning bid on a major project representing
-        a cost of €10 million, with 5000+ users all over Europe (C++, Docker, Networking)</li>
-        <li>Selected to represent Spherea in a European R&amp;T project involving 10+ companies
-        on next-generation distributed avionic integration platforms (C++, Java, Python, Bash)</li>
-        <li>Maintained the company software development infrastructure, hosting 20+ tools deployed
-        on cloud-based servers, for 400+ users (Docker, Kubernetes, Ansible, Nginx, Bash)</li>
-        <li>Provided recursive download for Nexus Repository Manager (not supported natively by Nexus)
-        with an introspection time of O(1) (Nginx, Python, Docker)</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">Software Engineer, Spherea, Toulouse, France</p>
+            <p class="period">2015-present</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Acted as developer, maintainer and trainer on Spherea’s main software product,
+            500k lines of code, within a team of 10 persons (C++, Java, Python)</span></li>
+            <li><span class="content-description">Led software industrialization, initiated and designed the Continuous Integration pipeline,
+            resulting in 95% reduction in bug detection time (GitLab CI, Docker, Bash)</span></li>
+            <li><span class="content-description">Realized the backend architecture of the winning bid on a major project representing
+            a cost of €10 million, with 5000+ users all over Europe (C++, Docker, Networking)</span></li>
+            <li><span class="content-description">Selected to represent Spherea in a European R&amp;T project involving 10+ companies
+            on next-generation distributed avionic integration platforms (C++, Java, Python, Bash)</span></li>
+            <li><span class="content-description">Maintained the company software development infrastructure, hosting 20+ tools deployed
+            on cloud-based servers, for 400+ users (Docker, Kubernetes, Ansible, Nginx, Bash)</span></li>
+            <li><span class="content-description">Provided recursive download for Nexus Repository Manager (not nativetly supported by Nexus)
+            with an introspection time of O(1) (Nginx, Python, Docker)</span></li>
+        </ul>
 
-    <h3>Software Engineer Intern, Spherea, Toulouse, France</h3>
-    <p>Feb-Jul 2014</p>
-    <ul>
-        <li>Developed custom virtual devices and buses for QEMU, a virtual machine engine,
-        enabling software development and testing without real hardware (QEMU, C)</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">Software Engineer Intern, Spherea, Toulouse, France</p>
+            <p class="period">Feb-Jul 2014</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Developed custom virtual devices and buses for QEMU, a virtual machine engine,
+            enabling software development and testing without real hardware (QEMU, C)</span></li>
+        </ul>
 
-    <h3>Software Engineer Intern, Vescape GmbH, Berlin, Germany</h3>
-    <p>June-Aug 2013</p>
-    <ul>
-        <li>Designed and implemented a fitness game from scratch, in collaboration with a graphic designer,
-        from the analysis of customer needs (C++, OpenGL)</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">Software Engineer Intern, Vescape GmbH, Berlin, Germany</p>
+            <p class="period">June-Aug 2013</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Designed and implemented a fitness game from scratch, in collaboration with a graphic designer,
+            from the analysis of customer needs (C++, OpenGL)</span></li>
+        </ul>
 
-    <h2>Education</h2>
+        <h2>Education</h2>
 
-    <h3>National Institute of Applied Sciences, Toulouse, France</h3>
-    <p>Institut National des Sciences Appliquées (INSA)</p>
-    <p>2009-2014</p>
-    <ul>
-        <li>Master’s degree in Computer Science and Networks</li>
-        <li>Major in Critical Embedded Systems, Minor in Computer Security</li>
-    </ul>
-    
-    <h3>Indian Institute of Technology (IIT) Delhi, New Delhi, India</h3>
-    <p>Fall 2012</p>
-    <ul>
-        <li>Exchange student, Bachelor of Technology program in Computer Science and Engineering</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">National Institute of Applied Sciences, Toulouse, France</p>
+            <p class="period">2009-2014</p>
+        </div>
+        <div class="content-title">
+            <p class="position-translate">Institut National des Sciences Appliquées (INSA)</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Master’s degree in Computer Science and Networks</span></li>
+            <li><span class="content-description">Major in Critical Embedded Systems, Minor in Computer Security</span></li>
+        </ul>
 
-    <h2>Skills</h2>
+        <div class="content-title">
+            <p class="position">Indian Institute of Technology (IIT) Delhi, New Delhi, India</p>
+            <p class="period">Fall 2012</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Exchange student, Bachelor of Technology program in Computer Science and Engineering</span></li>
+        </ul>
 
-    <h3>Technical skills</h3>
-    <ul>
-        <li>C++, C, Java, Python, Bash, Git, CMake, Docker, Docker Compose, Kubernetes,
-        Jenkins, GitLab CI, Nginx, Packer, Vagrant, GDB, Valgrind, Linux Systems, Networking, Vim</li>
-    </ul>
+        <h2>Skills</h2>
 
-    <h3>Languages</h3>
-    <ul>
-        <li>Bilingual in French and Malagasy, English (TOEIC 980/990, 2013), Spanish</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">Technical Skills</p>
+        </div>
+        <ul>
+            <li><span class="content-description">C++, C, Java, Python, Bash, Git, CMake, Docker, Docker Compose, Kubernetes,
+            Jenkins, GitLab CI, Nginx, Packer, Vagrant, GDB, Valgrind, Linux Systems, Networking, Vim</span></li>
+        </ul>
 
-    <h2>Awards</h2>
-    <ul>
-        <li>Received the Excellence-Major Scholarship, a 5-year program financed by the French government
-        for the top 200 foreign high school graduates in the world (Madagascar, 2009)</li>
-    </ul>
+        <div class="content-title">
+            <p class="position">Languages</p>
+        </div>
+        <ul>
+            <li><span class="content-description">Bilingual in French and Malagasy, English (TOEIC 980/990, 2013), Spanish</span></li>
+        </ul>
 
-    <h2>Fun Facts</h2>
-    <ul>
-        <li>Graduated with honors from the Conservatory of Music of Toulouse in musical training (2017)</li>
-        <li>Graduated with honors from the Catholic Institute of Toulouse in organ keyboard (2015)</li>
-    </ul>
+        <h2>Awards</h2>
+        <ul>
+            <li><span class="content-description">Received the Excellence-Major Scholarship, a 5-year program financed by the French government
+            for the top 200 foreign high school graduates in the world (Madagascar, 2009)</span></li>
+        </ul>
 
+        <h2>Fun Facts</h2>
+        <ul>
+            <li><span class="content-description">Graduated with honors from the Conservatory of Music of Toulouse in musical training (2017)</span></li>
+            <li><span class="content-description">Graduated with honors from the Catholic Institute of Toulouse in organ keyboard (2015)</span></li>
+        </ul>
+    </div>
 </body>
