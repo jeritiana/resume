@@ -2,7 +2,7 @@ services:
   - docker
 
 env:
-  jobs:
+  global:
     - DOCKER_USERNAME=jeritiana
     - APP_NAME=resume
 
