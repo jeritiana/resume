@@ -1,2 +1,7 @@
 resources:
-  - resume.yaml
+- resume.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: jeritiana/resume
+  newTag: v0.0.2
