@@ -1,0 +1,6 @@
+cluster_name: cluster-1
+project: midyear-lattice-276815
+compute:  # choose "region" or "zone"
+   zone: us-central1-c
+namespace: resume-prod
+no_pr_approval_required: false
