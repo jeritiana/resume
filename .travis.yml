@@ -13,5 +13,5 @@ jobs:
     - stage: build docker image
       script:
         #- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-        - docker build -t $DOCKER_USERNAME/resume
+        - docker build -t $DOCKER_USERNAME/resume .
         #- docker push $DOCKER_USERNAME/travis-ci-build-stages-demo
