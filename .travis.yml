@@ -10,6 +10,7 @@ jobs:
   include:
     - stage: build docker image
       script:
-        - docker build -t $DOCKER_USERNAME/$APP_NAME .
+        - export DOCKER_TAG=$([ "$TRAVIS_BRANCH" = "master" ] && echo "latest" || echo "$TRAVIS_BRANCH")
+        - docker build -t $DOCKER_USERNAME/$APP_NAME:$DOCKER_TAG .
         - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-        - docker push $DOCKER_USERNAME/$APP_NAME
+        - docker push $DOCKER_USERNAME/$APP_NAME:$DOCKER_TAG
