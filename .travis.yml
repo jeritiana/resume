@@ -1,17 +1,15 @@
 services:
   - docker
 
-dist: trusty
-
 env:
-  global:
+  jobs:
     - DOCKER_USERNAME=jeritiana
-    - DOCKER_PASSWORD=
+    - APP_NAME=resume
 
 jobs:
   include:
     - stage: build docker image
       script:
-        #- docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
-        - docker build -t $DOCKER_USERNAME/resume .
-        #- docker push $DOCKER_USERNAME/travis-ci-build-stages-demo
+        - docker build -t $DOCKER_USERNAME/$APP_NAME .
+        - docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+        - docker push $DOCKER_USERNAME/$APP_NAME
