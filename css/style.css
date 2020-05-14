@@ -2,72 +2,82 @@ body
 {
     margin: 0 0 0 0;
     padding-bottom: 2em;
+    font-size: 1em;
 }
 
-.top-element
+header
 {
     color: white;
     background-color: black;
-    border: 10px solid black;
-    margin-top: 0px;
-    padding-bottom: 2em;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding: 1em 8% 1em 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-h1
+#header-infos
+{
+}
+
+#header-infos h1
 {
     font-size: 2.5em;
     font-family: arial, sans-serif;
 }
 
-.top-element img
-{
-    height: 1em;
-    margin-right: 10px;
-}
-
-.top-element p
+#header-infos p
 {
     margin: 0 0;
     padding-left: 0.4em;
     font-family: Trebuchet MS, arial, sans-serif;
 }
 
-.top-element ul
+#header-prog-languages
 {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    list-style: none;
-    padding-right: 10%;
+    padding-top: 1em;
 }
 
-.top-element li
+#header-prog-languages ul
 {
-    font-size: 0.9em;
-    color: black;
+    list-style-type: none;
+}
+
+#header-prog-languages li
+{
+    font-size: 1em;
     background-color: white;
     border: 1px solid white;
-    border-radius: 10%;
-    padding: 0px 2px 0px 2px;
+    border-radius: 5%;
     margin: 6px 0px 6px 0px;
+    padding-left: 5px;
+    padding-right: 5px;
     text-align: center;
     color: #283583;
-    width: 100%;
 }
 
-.content
+section
 {
     margin-left: 10%;
     margin-right: 10%;
+    margin-top: 0;
+    margin-bottom: 0;
     text-align: justify;
 }
 
-h2
+section h2
 {
     font-size: 1.8em;
     margin-bottom: 0;
+}
+
+section h2+ul
+{
+    margin-top: 1em;
+}
+
+section h2+.content-title
+{
+    margin-top: auto;
 }
 
 .content-title
@@ -82,7 +92,7 @@ h2
     text-align: right;
 }
 
-.content ul
+section ul
 {
     margin: 0 0 0 0;
     padding-left: 0;
@@ -91,26 +101,34 @@ h2
 
 .content-description
 {
-    position: relative;
     padding-left: 0.4em;
 }
 
 .position-translate
 {
-    position: relative;
     margin-top: -1em;
     font-style: italic;
 }
 
-h2+ul
+#caption
 {
-    padding-top: 1em;
-}
-
-.caption ul
-{
-    list-style-type: none;
+    margin-top: 1em;
+    margin-bottom: 1em;
     text-align: center;
     color: #535861;
+}
+
+#caption ul
+{
+    list-style-type: none;
     padding: 0 10% 0 10%;
+}
+
+.inline-code
+{
+    border-radius: 4px;
+    padding: 1px 2px 1px 2px;
+    font-family: monospace;
+    color: rgb(200, 0, 0);
+    background-color: rgba(100, 0, 0, 0.1);
 }
