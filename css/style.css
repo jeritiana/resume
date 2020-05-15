@@ -9,6 +9,10 @@ header
     color: white;
     background-color: black;
     padding: 1em 8% 1em 8%;
+}
+
+#header-main
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,7 +28,7 @@ header
     font-family: arial, sans-serif;
 }
 
-#header-infos p
+#header-infos p, #header-links
 {
     margin: 0 0;
     padding-left: 0.4em;
@@ -46,12 +50,33 @@ header
     font-size: 1em;
     background-color: white;
     border: 1px solid white;
-    border-radius: 5%;
+    border-radius: 4px;
     margin: 6px 0px 6px 0px;
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
     color: #283583;
+}
+
+#header-links
+{
+}
+
+#header-links a
+{
+    text-decoration: none;
+    color: white;
+    padding-bottom: 3px;
+}
+
+#header-links a:hover
+{
+    border-bottom: 1px solid white;
+}
+
+#header-links a:visited
+{
+    color: gray;
 }
 
 section
@@ -109,10 +134,16 @@ section ul
     font-style: italic;
 }
 
+hr
+{
+    width: 40%;
+    text-align: center;
+}
+
 #caption
 {
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     text-align: center;
     color: #535861;
 }
